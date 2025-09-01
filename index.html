@@ -58,7 +58,6 @@
     const estado = document.getElementById('estado');
     const btn = document.getElementById('btnSiguiente');
 
-    // Estados y clases correspondientes
     const estados = [
       { clase: 'rojo', texto: 'Alto' },
       { clase: 'amarillo', texto: 'Precaución' },
@@ -67,13 +66,11 @@
     let indice = 0;
 
     btn.addEventListener('click', () => {
-      // Incrementar índice y ciclarlo
       indice = (indice + 1) % estados.length;
-      // Cambiar clase
       luz.className = 'luz ' + estados[indice].clase;
-      // Cambiar texto
       estado.textContent = estados[indice].texto;
     });
   </script>
 </body>
 </html>
+
